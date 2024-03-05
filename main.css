@@ -3,7 +3,7 @@
     background-color:lightyellow ;
   }
 
-  .motion-wrapper {
+   .motion-wrapper {
     background-color: lightyellow;
     display: grid;
     /* height: 100%; */
@@ -25,7 +25,7 @@
     max-width: 400px; 
     }
   /* Animation for top circle */
-  #top-circle{
+  #download_asset{
     animation: color-shift-top 7s infinite;
 }
 
@@ -34,14 +34,18 @@
 
         0%, 100%{
             fill:rgb(44, 212, 201);
+            transform: scale(.5);
+            transform-origin: center;
             }
             50%{
                 fill:rgb(13, 190, 107);
+                transform: scale(.8);
+                transform-orgin: center;
             }
         }
 
   /* Animation for middle circle */
-  #middle-circle{
+  #download_asset{
     animation: color-shift-middle 7s infinite;
 }
 
@@ -49,6 +53,7 @@
 
         0%, 100%{
             fill:rgb(212, 44, 145);
+           
             }
             50%{
                 fill:rgb(22, 13, 190);
@@ -56,14 +61,15 @@
         }
     
   /* Animation for bottom circle */
-  #bottom-circle{
+  #download_asset{
     animation: color-shift-bottom 7s infinite;
 }
 
   @keyframes color-shift-bottom{
 
         0%, 100%{
-            fill:red
+            fill:red;
+           
             }
             50%{
                 fill:rgb(234, 242, 6);
@@ -77,3 +83,4 @@ svg{
       max-width: 300px; /* Adjust maximum width for smaller screens */
   }
   }
+  
